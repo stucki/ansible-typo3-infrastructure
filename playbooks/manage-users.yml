@@ -1,0 +1,10 @@
+# Ansible playbook to create and manage user accounts
+---
+- hosts: all
+  sudo: yes
+
+  roles:
+    - { role: users, when: skip_manage_users == false }
+
+  post_tasks:
+    - include: ../roles/etckeeper/tasks/commit.yml commit_msg="Commit changes made by the Ansible \\\"manage-users\\\" role"

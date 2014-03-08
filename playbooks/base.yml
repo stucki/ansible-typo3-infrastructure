@@ -1,0 +1,13 @@
+# Ansible playbook to set up the base system
+---
+- hosts: all
+  sudo: yes
+
+  roles:
+    - base
+    - etckeeper
+    - sudo
+    - { role: oh-my-zsh, when: skip_ohmyzsh == false }
+
+  post_tasks:
+    - include: ../roles/etckeeper/tasks/commit.yml commit_msg="Commit changes made by the Ansible \\\"base\\\" role"

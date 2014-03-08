@@ -1,0 +1,17 @@
+---
+users:
+  - username: mstucki
+    name: Michael Stucki
+    groups: ['sudo']
+    uid: 1011
+    shell: /bin/zsh
+    ssh_key:
+      - "ssh-dss AAAAB3NzaC1kc3MAAACBAN6h0vtq/UaTqitVn4CFzA+wD0bYKtNT/qOPJbh/30/v91fk1AL8GFEgalTU4L1WeI2NXY6vxN/+6SqWL/AOuqJG8dv49BPJuhNOuWduKPTLM3K9j/2CI2cJ8e7HtSlRr6wd7v2XZbJ4NcfFSXEp22NreRcRo+BoelzZj0M9kenFAAAAFQCujP6Of8kxMMAns3bFNNVN3A6RcwAAAIBjbsc8qawKPPxYsrhbKERrnCDLffMHp9AKUAiT29tQ9XL3RYlhYGpaZlnrkNKWVMo9iU56ySQnuEiKTXOeNCQyqRHwVvRqJgVEIGt1iZ8J+iuaietqM7RPKJm/LW8vrwEcvorCpo+62K9r4PWcVlldmlhPj+K44nvUB0wiw33HBQAAAIEAgAw73Inn1s5UAOcYfjBRR9jXgz9crKoYH3pHDOhAuu5nuBgxkz9XSqTwPfo5euaDDlTwF/kKgXOCKTWkkXR9vUsPGkKvoC/XAccS9AOKpEvnPY9V5IujKnnvOOXhNYD47wzuC78+A2b68WDB/WAKvia3OH6nij2B1kXk1D+P6dQ= michael.stucki@typo3.org"
+
+users_deleted:
+  - username: jdoe
+
+
+
+skip_manage_users: false
+skip_ohmyzsh: false

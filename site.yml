@@ -1,0 +1,17 @@
+# Main playbook to deploy everything
+# Run with: ansible-playbook -i hosts site.yml
+---
+- hosts: all
+  sudo: yes
+
+  pre_tasks:
+    - include: roles/etckeeper/tasks/commit.yml commit_msg="Saving uncommitted changes prior to Ansible run"
+
+- include: playbooks/base.yml
+- include: playbooks/manage-users.yml
+
+- hosts: all
+  sudo: yes
+
+  post_tasks:
+    - include: roles/etckeeper/tasks/commit.yml commit_msg="Saving uncommitted changes after Ansible run"
