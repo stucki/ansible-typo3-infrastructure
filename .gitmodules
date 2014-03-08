@@ -1,0 +1,3 @@
+[submodule "ansible-users"]
+	path = roles/ansible-users
+	url = https://github.com/mivok/ansible-users.git
