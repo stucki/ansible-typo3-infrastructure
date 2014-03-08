@@ -1,0 +1,6 @@
+---
+- name: Install lxc
+  apt: name={{item}} state=present
+  with_items:
+    - bridge-utils
+    - lxc

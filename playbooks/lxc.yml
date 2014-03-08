@@ -1,0 +1,10 @@
+# Ansible playbook to install LXC
+---
+- hosts: all
+  sudo: yes
+
+  roles:
+    - lxc
+
+  post_tasks:
+    - include: ../roles/etckeeper/tasks/commit.yml commit_msg="Commit changes made by the Ansible \\\"lxc\\\" role"
