@@ -17,6 +17,7 @@
    - tig
    - mc
    - nano
+   - screen
    - vim
 
 - name: Install python-software-properties so the apt_repository module will work properly
